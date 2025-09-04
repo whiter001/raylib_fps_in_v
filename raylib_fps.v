@@ -3,6 +3,7 @@ import os
 import raylib as r
 
 fn main() {
+	r.vset_trace_log_level(.log_error)
 	r.init_window(800, 450, 'raylib [models] example - first person maze')
 
 	mut camera := r.Camera{
